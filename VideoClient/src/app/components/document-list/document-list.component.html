@@ -1,0 +1,25 @@
+<p>Upload one or more files using this form:</p>
+<input type="file" (change)="onFileUploaded($event)" name="file">
+<br>
+<br>
+<span style="margin: 20px 0px 0px 10px;color:red">{{progress}}%</span>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">File Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let doc of documents">
+      <th scope="row">{{doc.id}}</th>
+      <td>{{doc.fileName}}</td>
+      <td>
+        <button type="button" class="btn btn-danger" (click)="fileClicked($event,doc)">Publish</button>
+        <button type="button" class="btn btn-primary" (click)="selectDocumentForStream($event,doc)">Watch</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
