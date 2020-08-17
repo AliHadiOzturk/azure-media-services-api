@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-appsettings.json
+# appsettings.json
 
 # compiled output
 /VideoClient/dist
