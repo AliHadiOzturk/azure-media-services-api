@@ -8,7 +8,7 @@ https://docs.microsoft.com/en-us/azure/media-services/latest/access-api-howto
 You can change the file path. This path used for save the file that client upload.
 
 # Running Project
-First get inside VideoClient folder and then write `npm install`.
+First get inside VideoClient folder and then run command `npm install`.
 Second run `ng serve`
 
 Open a new terminal and go VideoAPI folder.
